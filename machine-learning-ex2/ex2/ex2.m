@@ -136,8 +136,9 @@ pause;
 %  Predict probability for a student with score 45 on exam 1 
 %  and score 85 on exam 2 
 
-prob = sigmoid([1 45 85] * theta);
-fprintf(['For a student with scores 45 and 85, we predict an admission ' ...
+prob = sigmoid([1 40 80] * theta);
+
+fprintf(['For a student with scores 40 and 80, we predict an admission ' ...
          'probability of %f\n'], prob);
 fprintf('Expected value: 0.775 +/- 0.002\n\n');
 

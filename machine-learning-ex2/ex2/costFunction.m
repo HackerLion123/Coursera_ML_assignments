@@ -27,6 +27,7 @@ J = (1/m)*sum(-y'*log(prediction) - (1-y)'*log(1-prediction));
 for iter = 1:size(theta)
 	grad(iter) = (1/m)*sum((prediction-y)'*X(:,iter));
 
+
 % =============================================================
 
 end

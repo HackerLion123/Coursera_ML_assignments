@@ -20,6 +20,8 @@ grad = zeros(size(theta));
 
 prediction = sigmoid(X*theta);
 
+
+
 J = ((1/m)*sum(-y'*log(prediction) - (1-y)'*log(1-prediction))) + (lambda/(2*m))*sum(theta(2:size(theta)).^2);
 
 grad(1) = (1/m)*sum((prediction-y)'*X(:,1));
